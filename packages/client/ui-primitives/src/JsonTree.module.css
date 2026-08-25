@@ -18,13 +18,13 @@
 }
 
 :global(body[data-ds-dark-theme]) .root {
-  --json-tree-property: #5db0d7;
-  --json-tree-string: #f28b82;
-  --json-tree-number: #99c8ff;
-  --json-tree-keyword: #99c8ff;
-  --json-tree-punctuation: #e8eaed;
-  --json-tree-icon: #9aa0a6;
-  --json-tree-hover: rgb(232 234 237 / 5%);
+  --json-tree-property: #83a598;
+  --json-tree-string: #b8bb26;
+  --json-tree-number: #d3869b;
+  --json-tree-keyword: #d3869b;
+  --json-tree-punctuation: #ebdbb2;
+  --json-tree-icon: #928374;
+  --json-tree-hover: rgb(235 219 178 / 8%);
 }
 
 .container {
