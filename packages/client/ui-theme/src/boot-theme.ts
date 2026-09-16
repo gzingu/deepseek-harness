@@ -8,8 +8,10 @@
 import type { IndexInjection } from '@deepseek-ai/dsh-host-webserver'
 import { DEFAULT_FONT_SIZE, DEFAULT_PREFERENCE, type ThemePreference } from './theme-settings.ts'
 
+/* The pre-plugin canvas color must match --dsw-static-neutral-bluish-950, the
+   dark base surface design-platform.css declares. */
 const LIGHT_BACKGROUND = '#fff'
-const DARK_BACKGROUND = '#151517'
+const DARK_BACKGROUND = '#002b36'
 
 /** CSS that colors the document canvas before any script executes. */
 function bootThemeStyle(preference: ThemePreference): string {

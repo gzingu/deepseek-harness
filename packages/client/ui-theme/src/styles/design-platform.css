@@ -78,10 +78,12 @@ body {
 }
 
 /* Dark mode retint: the static scale remaps to Ethan Schoonover's solarized
- * dark palette: base03-base02 surface steps, base1-base00 text steps, and the
- * solarized accent hues (blue #268bd2, cyan #2aa198, green #859900, yellow
- * #b58900, orange #cb4b16, red #dc322f, magenta #d33682). Alias tokens and the
- * light block are untouched. */
+ * dark palette — base03/base02 surface steps, a base1-base01 text ramp, and the
+ * solarized accent hues. The accent trio (deepseek/blue 400/450/500) is cyan
+ * #2aa198 rather than blue #268bd2, which solarized assigns to light
+ * backgrounds: cyan clears 4.5:1 on base03 for links, focus rings, and filled
+ * controls, and a shared hue keeps filled/hover states from shifting hue.
+ * Alias tokens and the light block are untouched. */
 body[data-ds-dark-theme] {
   --dsw-static-amber-100: rgb(42, 71, 53);
   --dsw-static-amber-400: rgb(181, 137, 0);
@@ -90,26 +92,26 @@ body[data-ds-dark-theme] {
   --dsw-static-amber-900: rgb(72, 81, 32);
   --dsw-static-blue-100: rgb(14, 73, 98);
   --dsw-static-blue-300: rgb(21, 92, 131);
-  --dsw-static-blue-400: rgb(38, 139, 210);
-  --dsw-static-blue-450: rgb(38, 139, 210);
-  --dsw-static-blue-500: rgb(38, 139, 210);
+  --dsw-static-blue-400: rgb(42, 161, 152);
+  --dsw-static-blue-450: rgb(42, 161, 152);
+  --dsw-static-blue-500: rgb(42, 161, 152);
   --dsw-static-blue-50: rgb(12, 67, 88);
   --dsw-static-blue-50p: rgb(12, 67, 88);
   --dsw-static-blue-600: rgb(27, 110, 163);
   --dsw-static-blue-75: rgb(13, 69, 92);
-  --dsw-static-blue-800: rgb(15, 81, 116);
+  --dsw-static-blue-800: rgb(8, 67, 74);
   --dsw-static-blue-900: rgb(10, 67, 93);
   --dsw-static-blue-950: rgb(5, 55, 73);
   --dsw-static-deepseek-100: rgb(14, 73, 98);
   --dsw-static-deepseek-200: rgb(17, 81, 112);
   --dsw-static-deepseek-300: rgb(21, 92, 131);
-  --dsw-static-deepseek-400: rgb(38, 139, 210);
-  --dsw-static-deepseek-450: rgb(38, 139, 210);
-  --dsw-static-deepseek-500: rgb(38, 139, 210);
+  --dsw-static-deepseek-400: rgb(42, 161, 152);
+  --dsw-static-deepseek-450: rgb(42, 161, 152);
+  --dsw-static-deepseek-500: rgb(42, 161, 152);
   --dsw-static-deepseek-50: rgb(12, 67, 88);
   --dsw-static-deepseek-600: rgb(27, 110, 163);
   --dsw-static-deepseek-700-delete: rgb(21, 96, 140);
-  --dsw-static-deepseek-800: rgb(15, 81, 116);
+  --dsw-static-deepseek-800: rgb(8, 67, 74);
   --dsw-static-deepseek-900: rgb(10, 67, 93);
   --dsw-static-green-100: rgb(32, 74, 53);
   --dsw-static-green-400: rgb(133, 153, 0);
@@ -133,14 +135,14 @@ body[data-ds-dark-theme] {
   --dsw-static-neutral-900: rgb(0, 43, 54);
   --dsw-static-neutral-bluish-00: rgb(255, 255, 255);
   --dsw-static-neutral-bluish-1000: rgb(0, 43, 54);
-  --dsw-static-neutral-bluish-100: rgb(131, 148, 150);
+  --dsw-static-neutral-bluish-100: rgb(139, 155, 156);
   --dsw-static-neutral-bluish-150: rgb(131, 148, 150);
   --dsw-static-neutral-bluish-200: rgb(131, 148, 150);
-  --dsw-static-neutral-bluish-300: rgb(101, 123, 131);
-  --dsw-static-neutral-bluish-400: rgb(97, 119, 127);
+  --dsw-static-neutral-bluish-300: rgb(131, 148, 150);
+  --dsw-static-neutral-bluish-400: rgb(101, 123, 131);
   --dsw-static-neutral-bluish-500: rgb(101, 123, 131);
   --dsw-static-neutral-bluish-50: rgb(147, 161, 161);
-  --dsw-static-neutral-bluish-600: rgb(88, 110, 117);
+  --dsw-static-neutral-bluish-600: rgb(95, 117, 124);
   --dsw-static-neutral-bluish-60: rgb(131, 148, 150);
   --dsw-static-neutral-bluish-700: rgb(27, 68, 79);
   --dsw-static-neutral-bluish-750: rgb(7, 54, 66);
